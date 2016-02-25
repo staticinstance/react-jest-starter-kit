@@ -4,3 +4,5 @@ Use jest to test React components
 npm install
 # Test
 npm test
+# Run
+npm run dev

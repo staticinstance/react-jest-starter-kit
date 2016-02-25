@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class CheckboxWithLabel extends React.Component {
+class CheckboxWithLabel extends Component {
 
   constructor(props) {
     super(props);

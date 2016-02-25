@@ -6,7 +6,7 @@ class App extends Component {
     render(){
         return (
             <div>
-                <CheckboxWithLabel />
+                <CheckboxWithLabel labelOn={"On"} labelOff={"Off"}/>
             </div>
         )
     }

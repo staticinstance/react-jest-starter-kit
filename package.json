@@ -1,0 +1,54 @@
+{
+  "name": "react-jest-starter-kit",
+  "version": "1.0.0",
+  "description": "React Jest Starter Kit",
+  "author": "Michael Bradley",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/staticinstance/react-jest-starter-kit"
+  },
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "BABEL_JEST_STAGE=0 jest",
+    "dev": "webpack-dev-server"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "env": {
+      "development": {
+        "presets": [
+          "react-hmre"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "babel-core": "^6.5.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13"
+  },
+  "devDependencies": {
+    "babel-jest": "*",
+    "jest-cli": "*",
+    "jest-webpack-alias": "^2.2.0",
+    "react-addons-test-utils": "~0.14.0"
+  }
+}
